@@ -1,0 +1,33 @@
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 212-800-880
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 212-800-880
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 212-800-880
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [15/Jul/2023 19:53:24] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Jul/2023 19:53:26] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:root:Log My Final Result [{'Product': 'bus', 'Name': 'Sanal G', 'Rating': '4', 'CommentHead': 'Pretty good', 'Comment': 'Good toy'}, {'Product': 'bus', 'Name': 'Aswini Panigrahy', 'Rating': '1', 'CommentHead': 'Terrific', 'Comment': ''}]
+INFO:werkzeug:127.0.0.1 - - [15/Jul/2023 19:53:31] "[37mPOST /review HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Jul/2023 19:53:31] "[33mGET /style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 212-800-880
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [15/Jul/2023 20:05:49] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:root:list index out of range
+INFO:werkzeug:127.0.0.1 - - [15/Jul/2023 20:05:57] "[37mPOST /review HTTP/1.1[0m" 200 -
+INFO:root:Log My Final Result []
+INFO:werkzeug:127.0.0.1 - - [15/Jul/2023 20:06:09] "[37mPOST /review HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Jul/2023 20:06:09] "[33mGET /style.css HTTP/1.1[0m" 404 -
