@@ -30,9 +30,49 @@ git init
 git add .
 git status
 git commit -m "First Commit"
+git status
 git branch -M main
+git status
 git remote add origin https://github.com/Hemant8120/0.1.1_Flipkart_Review_Scraper_Flask.git
+git status
 git push -u origin main
+
+ERROR:
+$ git push -u origin main
+To https://github.com/Hemant8120/0.1.1_Flipkart_Review_Scraper_Flask.git
+! [rejected] main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/Hemant8120/0.1.1_Flipkart_Review_Scraper_Flask.git'  
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+135
+
+try:
+
+git fetch origin master
+git merge origin master
+After to wrote this code I received other error: (non-fast-forward)
+
+I write this code:
+
+git fetch origin master:tmp
+git rebase tmp
+git push origin HEAD:master
+git branch -D tmp
+And resolved my problem
+
+35
+
+pull is always the right approach but one exception could be when you are trying to convert a none-Git file system to a Github repository. There you would have to force the first commit in.
+
+git init
+git add README.md
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/Hemant8120/0.1.1_Flipkart_Review_Scraper_Flask.git
+git push --force origin main
 
 error: remote origin already exists:
 
