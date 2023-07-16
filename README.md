@@ -27,6 +27,7 @@ git config --global --list
 
 How to Create Git Repository from VS Code:
 git init
+git status
 git add .
 git status
 git commit -m "First Commit"
@@ -81,7 +82,7 @@ git remote -v
 
 git clone https://github.com/Hemant8120/0.1.1_Flipkart_Review_Scraper_Flask.git
 
-git remote set-url origin1 https://github.com/Hemant8120/0.1.1_Flipkart_Review_Scraper_Flask1.git
+git remote set-url origin1 https://github.com/Hemant8120/0.1.1_Flipkart_Review_Scraper_Flask.git
 git remote add origin1 https://github.com/Hemant8120/0.1.1_Flipkart_Review_Scraper_Flask.git
 
 Github remote permission denied:
