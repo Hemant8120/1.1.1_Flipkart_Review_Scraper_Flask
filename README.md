@@ -156,3 +156,11 @@ PATH: Control Panel\User Accounts\Credential Manager:
 Select option: git:https://github.com: REMOVE
 
 ALL DONE!
+
+How to Edit and Upload Files in a Current GitHub Repository:
+git status
+git add .
+git status
+git commit -m "Commit"
+git status
+git push -u origin main
