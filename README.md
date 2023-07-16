@@ -36,7 +36,8 @@ git branch -M main
 git status
 git remote add origin https://github.com/Hemant8120/0.1.1_Flipkart_Review_Scraper_Flask.git
 git status
-git push -u origin main
+git push -u origin main # Will not work for the First Time push
+git push -f origin main # First Time Use this "-f" to FORCE-FULLY PUSH
 
 ERROR:
 $ git push -u origin main
