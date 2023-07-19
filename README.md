@@ -5,163 +5,31 @@ Command Prompt Shell:
 To Clone a Repository from Github:
 git clone "GitHub_URL"
 
-conda create -n env_3.6.0 python=3.6.0 -y
+To activate this Python Base:
+conda activate base
 
-To activate this environment, use:
-conda activate env_3.6.0
+To Create a Python Environment for Flipkart_Review_Scraper_Flask(3.6.2) with Python(3.6.2):
+conda create -n Flipkart_Review_Scraper_Flask(3.6.2) python=3.6.2 -y
 
-To deactivate an active environment, use:
-conda deactivate env_3.6.0
+To activate this Python Environment for Flipkart_Review_Scraper_Flask(3.6.2) with Python(3.6.2):
+conda activate Flipkart_Review_Scraper_Flask(3.6.2)
+
+To De-activate this Python Environment for Flipkart_Review_Scraper_Flask(3.6.2) with Python(3.6.2):
+conda deactivate
+
+How do I remove/delete a Flipkart_Review_Scraper_Flask(3.6.2):
+?
 
 To Check Python Version:
 python --version
 
+To Check Python Packages Installed in Current Python Environment:
+pip list
+
+To Install the Whole Packages from requirements.txt:
 pip install -r requirements.txt
+pip list
+
+How to Execute the Python Application:
 python app.py
 python application.py
-
-Git Bash Commands:
-git config --global user.email "hemant8120g@gmail.com"
-git config --global user.name "Hemant8120"
-git config --global --list
-
-How to Create Git Repository from VS Code:
-git init
-git status
-git add .
-git status
-git commit -m "First Commit"
-git status
-git branch -M main
-git status
-git remote add origin https://github.com/Hemant8120/0.1.1_Flipkart_Review_Scraper_Flask.git
-git status
-git push -u origin main # Will not work for the First Time push
-git push -f origin main # First Time Use this "-f" to FORCE-FULLY PUSH
-
-ERROR:
-$ git push -u origin main
-To https://github.com/Hemant8120/0.1.1_Flipkart_Review_Scraper_Flask.git
-! [rejected] main -> main (non-fast-forward)
-error: failed to push some refs to 'https://github.com/Hemant8120/0.1.1_Flipkart_Review_Scraper_Flask.git'  
-hint: Updates were rejected because the tip of your current branch is behind
-hint: its remote counterpart. Integrate the remote changes (e.g.
-hint: 'git pull ...') before pushing again.
-hint: See the 'Note about fast-forwards' in 'git push --help' for details.
-
-135
-
-try:
-
-git fetch origin master
-git merge origin master
-After to wrote this code I received other error: (non-fast-forward)
-
-I write this code:
-
-git fetch origin master:tmp
-git rebase tmp
-git push origin HEAD:master
-git branch -D tmp
-And resolved my problem
-
-35
-
-pull is always the right approach but one exception could be when you are trying to convert a none-Git file system to a Github repository. There you would have to force the first commit in.
-
-git init
-git add README.md
-git add .
-git commit -m "first commit"
-git remote add origin https://github.com/Hemant8120/0.1.1_Flipkart_Review_Scraper_Flask.git
-git push --force origin main
-
-error: remote origin already exists:
-
-git remote --verbose
-git remote -v
-
-git clone https://github.com/Hemant8120/0.1.1_Flipkart_Review_Scraper_Flask.git
-
-git remote set-url origin1 https://github.com/Hemant8120/0.1.1_Flipkart_Review_Scraper_Flask.git
-git remote add origin1 https://github.com/Hemant8120/0.1.1_Flipkart_Review_Scraper_Flask.git
-
-Github remote permission denied:
-git config --global --unset core.excludesfile
-git config --global user.email "hemant8120g@gmail.com"
-git config --global user.name "Hemant8120"
-git config --global --list
-
-Go the Folder in Local Machine:
-C:\Users\Hemant_PC\.ssh
-
-Delete the files if any exist
-
-To Generate a New Key:
-Go to Terminal with Local Repository: (D:\Python Projects Blog\Project-0_Web_Scraping\0.1_iNeuron_Scraper\0.1.1_Flipkart_Review_Scraper_Flask)
-Type the command:
-ssh-keygen
-
-PROMPT:
-Enter file in which to save the key (C:\Users\Hemant_PC/.ssh/id_rsa): "PRESS 1st-ENTER" "PRESS 2nd-ENTER" "PRESS 3rd-ENTER"
-
-Go to Github/setting/ SSH and GPG Key/SSH keys:
-Click on: New SSH Key
-Title: Windows
-Key:
-
-//powershell
-Go to the Local Repository(C:\Users\Hemant_PC), where SSH Key has generated:
-Open it with Powershell, and type the command:
-Get-Content ~/.ssh/id_rsa.pub | Set-Clipboard
-
-By doing this, SSH Key has copied into my PC's Clipboard
-Go to Github/setting/ SSH and GPG Key/SSH keys:
-Key: "PASTE IT HERE"
-
-Click on: Add SSH Key
-
-fatal: unable to access 'https://github.com/Hemant8120/0.1.1_Flipkart_Review_Scraper_Flask.git/': The requested URL returned error: 403
-Go to Github/Settings/Developer Settings/Persona access tokens/Tokens(classic)
-Click on: Generate new token / Generate new token(classic)
-
-Note: authentication
-
-Select scopes:
-repo (Ckeck it)
-workflow (Ckeck it)
-write:packages
-delete:packages
-admin:org
-admin:public_key
-admin:repo_hook
-admin:org_hook
-gist
-notifications
-user (Ckeck it)
-delete_repo
-write:discussion (Ckeck it)
-admin:enterprise (Ckeck it)
-audit_log
-codespace
-copilot
-project
-admin:gpg_key (Ckeck it)
-admin:ssh_signing_key
-
-Click on: Generate token
-Personal access tokens (classic): "SAVE THE KEY IN SAFE PLACE"
-
-How do I change/switch user credentials used by git command line? (Windows 10, Git 2.9.2):
-PATH: Control Panel\User Accounts\Credential Manager:
-Select option: git:https://github.com: REMOVE
-
-ALL DONE!
-
-How to Edit and Upload Files in a Current GitHub Repository:
-git status
-git add .
-git status
-git commit -m "Commit"
-git status
-git push -u origin main

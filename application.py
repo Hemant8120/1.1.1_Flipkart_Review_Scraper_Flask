@@ -76,7 +76,10 @@ def index():
                     # print("Exception while creating dictionary: ",e)
                     logging.info(e)
 
-                mydict = {"Product": searchString, "Name": name, "Rating": rating, "CommentHead": commentHead,
+                mydict = {"Product": searchString,
+                          "Name": name,
+                          "Rating": rating,
+                          "CommentHead": commentHead,
                           "Comment": custComment}
                 reviews.append(mydict)
             logging.info("Log My Final Result {}" . format(reviews))
